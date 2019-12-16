@@ -1,4 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './Components/home';
 
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById('root'));
+// Return new home component to Index
+ReactDOM.render(<Home></Home>, document.getElementById('root'));
