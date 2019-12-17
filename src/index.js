@@ -9,22 +9,27 @@ import NotFound from './Components/notfound'
 import SideBar from './Components/sidebar'
 
 // Establish routing
-const routing = (
+const result = (
     <div>
-        <Router>
-            <div>
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/links" component={Links} />
-                    <Route path="/summary" component={Summary} />
-                    <Route path="/resume" component={Resume} />
-                    <Route path="/404" component={NotFound} />
-                    <Redirect from="*" to ="/404" />
-                </Switch>
-            </div>
-        </Router>
-        <SideBar />
+        <div>
+            <SideBar />
+        </div>
+        <div>
+            <Router>
+                <div>
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/links" component={Links} />
+                        <Route path="/summary" component={Summary} />
+                        <Route path="/resume" component={Resume} />
+                        <Route path="/404" component={NotFound} />
+                        <Redirect from="/home" to ="/" />
+                        <Redirect from="*" to ="/404" />
+                    </Switch>
+                </div>
+            </Router>
+        </div>
     </div>
 )
 
-ReactDOM.render(routing, document.getElementById('root'));
+ReactDOM.render(result, document.getElementById('root'));

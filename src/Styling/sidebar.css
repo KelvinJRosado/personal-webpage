@@ -1,8 +1,3 @@
-html,
-body {
-  margin: 0;
-}
-
 #App {
   font-family: sans-serif;
 
@@ -23,21 +18,21 @@ body {
 
   /* Our sidebar item styling */
   text-decoration: none;
-  margin-bottom: 10px;
-  color: #d1d1d1;
+  margin-bottom: 100px;
+  color: white;
   transition: color 0.2s;
 }
 
 /* Change color on hover */
 .bm-item:hover {
-  color: white;
+  color: orange;
 }
 
 /* The rest copied directly from react-burger-menu docs */
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: sticky;
   width: 36px;
   height: 30px;
   left: 36px;
