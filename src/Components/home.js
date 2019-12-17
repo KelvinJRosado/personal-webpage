@@ -5,9 +5,11 @@ import '../Styling/home.css'
 import Typography from '@material-ui/core/Typography';
 
 class Home extends React.Component {
-    
+
     render() {
-        return <Typography variant="h1">Hello World!</Typography>
+        return (
+            <Typography variant="h1">This is the home page</Typography>
+        )
     }
 }
 

@@ -13,3 +13,5 @@ class Links extends React.Component {
     }
 
 }
+
+export default Links
