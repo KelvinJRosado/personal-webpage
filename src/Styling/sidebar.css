@@ -14,7 +14,7 @@
 
 /* Individual item */
 .bm-item {
-  display: inline-block;
+  display: block;
 
   /* Our sidebar item styling */
   text-decoration: none;
@@ -46,8 +46,7 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  visibility: hidden;
 }
 
 /* Color/shape of close button cross */
